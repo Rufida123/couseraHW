@@ -6,7 +6,9 @@ header{
 	background-color: lightgray;
 }
 nav{
-	background-color: lightblue;
+	display: inline-block;
+	width: 80%;
+
 }
 main{
 	background-color: yellow;
@@ -15,9 +17,10 @@ main{
 footer{
 	background-color: lightgray;
 }
-li{
-	display: inline;
-	width: 100px;
+ul{
+	display: grid;
+	list-style-type: none;
+	grid-template-columns: 30% 30% 30%;
 }
 
 h1{
@@ -27,4 +30,26 @@ h1{
 }
 p{
 	line-height: 30px;
+}
+header img{
+	width: 10%;
+	position: relative;
+	top: 20px;
+}
+.grid-container{
+	display: grid;
+	grid-template-columns: 40% 40%;
+	justify-content: space-evenly;
+	align-items: center;
+	row-gap: 20px;
+}
+.grid-container img{
+	width: 100%;
+}
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	row-gap: 20px;
+	justify-content: space-evenly;
 }
